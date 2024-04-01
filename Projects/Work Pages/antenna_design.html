@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<title>MINES ARC Research Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"  href="../../favicon.png" type="image/png" sizes="64x64"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+    height: 100%;
+    line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
+    }
+
+    .collapsible {
+    background-color: #D2492A;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+    background-color: #92A2BD;
+    }
+
+    .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    }
+
+    .active:after {
+    content: "\2212";
+    }
+
+    .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    }
+
+    * {box-sizing: border-box}
+    body {font-family: "Raleway", sans-serif;}
+
+    /* Style the tab */
+    .tab {
+      float: left;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      width: 30%;
+      height: 300px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      border-left: none;
+      height: 300px;
+      display: none;
+    }
+
+    /* Clear floats after the tab */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../../#home" class="w3-bar-item w3-center w3-wide"><img class="w3-image w3-round-large" src="../../Media_1/arcLogo_header.png" alt="Electrical Engineering Department" style="width:50%"></a> 
+    <!-- Right-sided navbar links -->
+    
+    <div class="w3-right w3-hide-small">
+      <a href="../../#home" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+      <a href="../../#news" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o" aria-hidden="true"></i> NEWS</a>
+      <a href="../../#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle" aria-hidden="true"></i> ABOUT</a>
+      <a href="../../#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> GROUP</a>
+      <a href="../../#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="../../#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <a href="https://electrical.mines.edu/" target="_blank"><img class="w3-image w3-round-large" src="../../Media_1/ee_logo.png" alt="Electrical Engineering Department" style="width:20%"></a>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../../#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
+  <a href="../../#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="../../#team" onclick="w3_close()" class="w3-bar-item w3-button">GROUP</a>
+  <a href="../../#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="../../#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-black" style="padding:48px">
+    
+    <div class="w3-row w3-black">
+        <div class="w3-col w3-center">
+            <h3> Antenna Design </h3>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-center">
+            <p align="justify">The ARC Group is capable of spanning full spectrum for antenna development; it has the industry standard simulation tools (CST, HFSS) and in-house 
+                solvers to conceptualize and analyze novel antenna designs, the ability to fabricate prototypes of these concepts on both rigid and flexible substrates in-house, 
+                and the ability to measure the performance of the built prototypes from near and far-field measurements in-house. This concept to product capability is used in
+                 conjunction with decades of research and development experience to create many types of novel miniaturized and wideband antennas for various applications - ranging 
+                 from CubeSats to 5G networks. The group is actively leveraging these capabilities to meet society's growing demand for lower-cost, lightweight, and small form-factor
+                  wideband antennas for both conformal/planar usecases. Having its own anechoic chamber, the group is also actively investigating and implementing low-cost methods 
+                  for far and near-field measurements to enable a broader range of the public to be able to characterize and learn about antenna performance characterization.</p>
+                <div class="w3-col m3 w3-center">
+                    <img class="w3-image w3-round-large" src="../../Media_1/research/frontpage/ant1.jpg" style="width:65%">
+                    <P></P>
+                </div>
+                <div class="w3-col m3 w3-center">
+                    <img class="w3-image w3-round-large" src="../../Media_1/research/frontpage/ant2_new.png" alt="Buildings">
+                </div>
+                 <div class="w3-col m3 w3-center">
+                    <img class="w3-image w3-round-large" src="../../Media_1/research/frontpage/ant3_new.png" style="width:70%">
+                </div>
+                <div class="w3-col m3 w3-center">
+                    <img class="w3-image w3-round-large" src="../../Media_1/research/frontpage/ant4_new.png" alt="Buildings">
+                </div>
+        </div>
+    </div>
+  </div>
+  
+  
+    
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  </div>
+</header>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="../../index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity">-->
+  </div>
+  <p>Powered by <a href="https://electrical.mines.edu/" title="EE" target="_blank" class="w3-hover-text-grey">Mines Graduate Students</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Collapsable about sections
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+// Resources hover tabs
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// VIDEOS
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+</script>
+
+</body>
+</html>

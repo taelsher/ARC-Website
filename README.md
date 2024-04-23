@@ -1,6 +1,20 @@
-readme
+This project uses the build tool: Vite (https://vitejs.dev/)
 
+Vite requires Node.js version 18+. 20+.
 
-Run this command to host locally on http://localhost:9000/
-$ python -m http.server 9000
+To run this project locally:
 
+1. install node (https://nodejs.org/en)
+2. install package dependencies in this directory
+
+```
+$ npm install
+```
+
+3. run local development server
+
+```
+$ npm run dev
+```
+
+The terminal will tell you which url and port the development server is running on.

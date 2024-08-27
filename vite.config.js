@@ -7,6 +7,7 @@ export default defineConfig({
       targets: [
         { src: "Projects/*", dest: "dist/Projects" },
         { src: "Media_1/*", dest: "dist/Media_1" },
+        {src: "Software/*", dest: "dist/Software"},
       ],
       hook: "writeBundle", // Ensures files are copied after the bundle is written
     }),

@@ -124,19 +124,39 @@
 
     /* Create two equal columns that floats next to each other */
     .column {
-      float: left;
+      display: flex;
+      flex: 50%;
+      flex-direction: column;
+      flex-basis:100%;
+      flex:1;
+      justify-content: space-around;
+      /* float: left;
       width: 50%;
       padding: 10px;
-      height: 300px; /* Should be removed. Only for demonstration */
+      height: 300px; Should be removed. Only for demonstration */
     }
-
+    .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    }
+    .left{
+      width: 500px;
+      padding: 20px;
+    }
+    .right{
+      width:500px;
+      padding:20px;
+    }
     /* Clear floats after the columns */
-    .row:after {
+    /* .row:after {
       content: "";
       display: table;
       clear: both;
-    }
-
+    } */
 </style>
 <body>
 
@@ -174,34 +194,37 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Meet Rob</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Meet Rob</span><br>
-    <span class="w3-large">Rob is a current Master's Thesis student.</span> 
-    <p class="m4 w3-hide-medium"><b>Rob Jones's</b> research interests include antenna design and metrology and channel sounding.</p>    
+<header id="home">
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+</header>
+<body>
+  <div class = "row">
+    <div class="left">
+      <img src="../../Media_1/portraits/rjones.jpg" width="400" height="500"> 
       <h3>PROJECTS</h3>
       <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Robert_GRADS_2020_V6.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Pyramidal Absorbing Layers for Electromagnetic Simulations - GRADS 2020</a></p>
       <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_isoflux.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Isoflux Antenna for CubeSats</a></p>
-      <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band</a></p>
-         
-  </div> 
+      <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band</a></p>     
+      <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/Jones_mines_0052N_12242.pdf" class = "w3-button w3-black"><i class = "fa fa-th"></i>Underground Mine Localization</a></p>
+      <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/BCICTS_Jones_BERB_final_updt.pdf.pdf" class = "w3-button w3-black"><i class = "fa fa-th"></i>Microstrip and CPW Calibration Kit Comparison</a></p>
+    </div>
+      <div class = "right">
+        <h1>Meet Rob</h1>
+      <br>
+      <p>Rob is currently a PhD student researching InP HBT transistor modeling and high frequency power amplifier design.</p> 
+      <p>Since 2016, he has been a member of the ARC research group and since 2017 he has been a student researcher at the National Institute of Standards and Technology in Boulder, CO. He was part of the team that won 3rd place in the Antennas and Propagation Society’s student design competition in 2017 and were finalists in the 2018 student design competition. In 2019 he earned bachelor’s degrees in mechanical engineering and electrical engineering. In 2021 he completed his master’s degree titled: “A Zone-based, underground localization system using passive reverse RFID and IMU technologies.”
+        His previous research interests have been in antenna design, anechoic chamber metrology, reverberation chamber metrology, channel sounding, and RFID localization.
+        His current research interests include modeling of III-V transistors, on-wafer metrology, and active device design in the millimeter-wave, sub-millimeter-wave, and terahertz frequency bands.</p>    
 
-  <div class="w3-display-right w3-text-black" style="padding:60px">
-      <img src="../../Media_1/portraits/rjones.jpg" width="400" height="500">      
-    </div> 
-
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-    
+      </div>
   </div>
-</header>
-
+</body>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">

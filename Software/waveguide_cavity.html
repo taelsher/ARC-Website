@@ -139,22 +139,27 @@
 
     /* Create two equal columns that floats next to each other */
     .column {
-      float: left;
-      width: 50%;
-      padding: 120px;
+      width: 500px;
+      padding: 25px;
     }
 
     /* Clear floats after the columns */
-    .row:after {
+    /* .row:after {
       content: "";
       display: table;
       clear: both;
+    } */
+    .row{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 20px;
+      column-gap: 20px;
     }
-    
 
 
 </style>
-<body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -196,33 +201,38 @@
 <!-- empty comit -->
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style = "height: auto">
-  <div class="row">
-    <div class="column">
-      <div><p></p></div>
-      <div class="w3-xxxlarge w3-hide-small">Waveguide and Cavity Software Package</div>
-        <h4>Research Paper</h4>
-      <p><a target="_blank" rel="noopener noreferrer" href="WGC_V3.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Visualization of Electric and Magnetic Fields<br> Inside Circular and Baffle Waveguides and Cavities</a></p>
-      <!-- TODO: link to Tamer's site -->
-      <button class="btn"><i class="fa fa-download"></i> <a style="text-decoration:none" href="https://taelspire.gumroad.com/l/jeovu">Download </a> </button>  
-      <h3>About This Software</h3>
-    <p>An interactive software to visualize the electric and magnetic field distribution inside circular and baffle waveguides and cavities.
-
-      This software features a user- friendly interface through which user can specify the design parameters such as dimensions, propagation mode (TE or TM), mode number, operating frequency, and visualization plane.
-      
-      Both transverse and longitudinal field components can be visualized in vector, color contour or both.
-      
-      Field distributions can be displayed as static images or video animations using appropriate sequencing of computed field values.
-      
-      Moreover, this software can give all necessary warnings for invalid user input parameters. Mathematical expressions of the field components used in this software were derived from the classical solution of the wave equations using the separation of variables technique in cylindrical coordinates.</p>
-      </div>
-    <div class="column">
-      <div class="w3-display-right w3-text-black" style="padding:48px">
-        <img src="Waveguide&Cavity.png " width="100%" height="100%">
-        <p></p> 
+<br><br>
+<br>
+<br>
+ <div class = "container">
+  <body>
+    <div class="row">
+      <div class="column">
+        <div><p></p></div>
+        <div class="w3-xxxlarge w3-hide-small">Waveguide and Cavity Software Package</div>
+          <h4>Research Paper</h4>
+        <p><a target="_blank" rel="noopener noreferrer" href="WGC_V3.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Visualization of Electric and Magnetic Fields<br> Inside Circular and Baffle Waveguides and Cavities</a></p>
+        <!-- TODO: link to Tamer's site -->
+        <button class="btn"><i class="fa fa-download"></i> <a style="text-decoration:none" href="https://taelspire.gumroad.com/l/jeovu">Download </a> </button>  
+        <h3>About This Software</h3>
+      <p>An interactive software to visualize the electric and magnetic field distribution inside circular and baffle waveguides and cavities.
+  
+        This software features a user- friendly interface through which user can specify the design parameters such as dimensions, propagation mode (TE or TM), mode number, operating frequency, and visualization plane.
+        
+        Both transverse and longitudinal field components can be visualized in vector, color contour or both.
+        
+        Field distributions can be displayed as static images or video animations using appropriate sequencing of computed field values.
+        
+        Moreover, this software can give all necessary warnings for invalid user input parameters. Mathematical expressions of the field components used in this software were derived from the classical solution of the wave equations using the separation of variables technique in cylindrical coordinates.</p>
+        </div>
+      <div class="column">
+          <img src="Waveguide&Cavity.png " width="100%" height="474px">
+          <p></p> 
     </div>
-  </div>
-  </div>
-
+    </div>
+  </body>
+</div>
+  
 
   <!-- <div class=" w3-display-left w3-text-black" style="padding:48px">
 
@@ -233,7 +243,7 @@
       <img src="Waveguide&Cavity.png " width="500" height="500">      
   </div>  -->
 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  <!-- <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px"> -->
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -241,7 +251,7 @@
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>-->
     
-  </div>
+  <!-- </div> -->
 </header>
 
 

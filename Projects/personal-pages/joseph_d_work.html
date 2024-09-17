@@ -130,11 +130,22 @@
       height: 300px; /* Should be removed. Only for demonstration */
     }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    
+    .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    }
+    .left{
+      width: 500px;
+      padding: 20px;
+    }
+    .right{
+      width:500px;
+      padding:20px;
     }
     
 
@@ -177,23 +188,25 @@
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Meet Joseph</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Meet Joseph</span><br>
-    <span class="w3-large">Joseph is a current PhD student.</span><br>  
-    <p></p>
-    
-      <p class="m4 w3-hide-medium"><b>Joseph Diener's</b> research interests include antenna design, SDR Applications, FDTD, and Channel Sounding.</p>
-    <h3>PROJECTS</h3>
-    <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Joseph_GRADS_2020_V2.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Polarization Reconfigurable Patch Antenna for 5.8 GHz ISM Applications - GRADS 2020</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_uhfant.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Miniaturized Omnidirectional Antennas for RFID/UHF</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_isoflux.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Isoflux Antenna for CubeSats</i> </a></p> 
-  </div> 
+  
+  <body style="padding-top: 150px;">
+    <div class = "row">
+      <div class="left">
+        <img src="../../Media_1/portraits/jdiener-2.jpg" width="500" height="500"> 
+        <h3>PROJECTS</h3>
+        <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Joseph_GRADS_2020_V2.pdf" class="w3-button w3-black" style="text-wrap: wrap;"><i class="fa fa-th"> </i> Polarization Reconfigurable Patch Antenna for 5.8 GHz ISM Applications - GRADS 2020</a></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_uhfant.pdf" class="w3-button w3-black" style="text-wrap: wrap;"><i class="fa fa-th"> </i> Miniaturized Omnidirectional Antennas for RFID/UHF</a></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black" style="text-wrap: wrap;"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band</a></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_isoflux.pdf" class="w3-button w3-black" style="text-wrap: wrap;"><i class="fa fa-th"> </i> Isoflux Antenna for CubeSats</i> </a></p> 
+      </div>
+        <div class = "right">
+          <h1>Meet Joseph</h1>
+        <p>Joseph is currently a PhD student </p>
+        <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/josephediener/" class="w3-button w3-black"><i class="fa fa-linkedin"> </i></a></p> 
+        </div>
+    </div>
+  </body>
 
-  <div class="w3-display-right w3-text-black" style="padding:48px">
-      <img src="../../Media_1/portraits/jdiener-2.jpg" width="400" height="400">      
-  </div> 
 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>

@@ -136,7 +136,24 @@
       display: table;
       clear: both;
     }
-
+    .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    }
+    .left{
+      width: 500px;
+      padding: 20px;
+  
+    }
+    .right{
+      width:500px;
+      padding:20px;
+      
+    }
 </style>
 <body>
 
@@ -174,24 +191,31 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Meet Josh</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Meet Josh</span><br>
-    <span class="w3-large">Josh is a current PhD student.</span>  
-  
-      <p class="m4 w3-hide-medium"><b>Joshua Kast's</b> research interests include beamforming, RFID localization, and SDR.</p>
-      <h3>PROJECTS</h3>
-    <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/JosH_GRADS_Presentation_2020_R2.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Simulation of a Nonlinear Frequency Multiplier using the FDTD Technique- GRADS 2020</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jkast_beamforming.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Beamforming Networks</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jkast_aweiss_rfid.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> RFID Localization</a></p>
-    <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8GHz ISM Band</i> </a></p>          
-  </div> 
-  
-  <div class="w3-display-right w3-text-black" style="padding:48px">
-      <img src="../../Media_1/portraits/jkast.jpg" width="400" height="500">      
-    </div> 
+<header class="bgimg-1 w3-display-container" id="home">
+  <body style="padding-top: 150px;">
+    <div class = "row">
+      <div class = "left">
+        <!-- left content -->
+        <span class="w3-jumbo">Meet Josh</span><br>
+        <span class="w3-large">Josh is a previous PhD student.</span>  
+        <p class="m4"><b>Joshua Kast's</b> research interests include beamforming, RFID localization, and SDR.</p>
+        <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-kast-321124128/" class="w3-button w3-black"><i class="fa fa-linkedin"> </i></a></p> 
 
+    
+      </div>
+      <div class = "right">
+        <!-- right content -->
+        <img src="../../Media_1/portraits/jkast-2.jpg" width="500" height="500">      
+        <h3>PROJECTS</h3>
+        <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/JosH_GRADS_Presentation_2020_R2.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Simulation of a Nonlinear Frequency Multiplier using the FDTD Technique- GRADS 2020</a></p>
+        <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jkast_beamforming.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> Beamforming Networks</a></p>
+        <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jkast_aweiss_rfid.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> RFID Localization</a></p>
+        <p><a target="_blank" rel="noopener noreferrer" href="../../Media_1/research/jdiener_rjones_jkast_sdr.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> SDR Based Switched-Array Channel Sounder for 5.8GHz ISM Band</i> </a></p>          
+      
+      </div>
+    </div>
+  </body>
+    
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>

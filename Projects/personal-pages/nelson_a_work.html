@@ -136,9 +136,26 @@
       display: table;
       clear: both;
     }
-    
+    .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
 
+  .left {
+    width: 500px;
+    padding: 20px;
 
+  }
+
+  .right {
+    width: 500px;
+    padding: 20px;
+
+  }
 </style>
 <body>
 
@@ -176,21 +193,25 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-black" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Meet Nelson</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Meet Nelson</span><br>
-    <span class="w3-large">Nelson Angels is a current combined bachelor’s and Master's Thesis student.</span><br>  
-    <p></p>
-    
-      <p class="m4 w3-hide-medium"><b>Nelson Angels's</b> Research interests include computational electromagnetics in FDTD <br>relating to biomedical applicaitons and implants, brain-computer interfaces,<br> wireless communications optimization, and anttenna design.</p>
-    <h3>PROJECTS</h3>
-    <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Nelson_research.pdf" class="w3-button w3-black"><i class="fa fa-th"> </i> MRI Discretization Tools for FDTD Solvers and Analysis
-  </div> 
+<header class="bgimg-1 w3-display-container " id="home">
+  <body style="padding-top: 150px;">
+    <div class ="row">
+      <div class = "left">
+<!-- left content -->
+<span class="w3-jumbo">Meet Nelson</span><br>
+<span class="w3-large">Nelson Angels is a current combined bachelor’s and Master's Thesis student.</span><br>  
+<p class="m4"><b>Nelson Angels's</b> Research interests include computational electromagnetics in FDTD <br>relating to biomedical applicaitons and implants, brain-computer interfaces,<br> wireless communications optimization, and anttenna design.</p>
+      </div>
+      <div class = "right">
+<!-- right content -->
+<img src="../../Media_1/portraits/nangels.jpg" width="500" height="500">   
+<h3>PROJECTS</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Nelson_research.pdf" class="w3-button w3-black" style = "text-wrap: wrap;"><i class="fa fa-th"> </i> MRI Discretization Tools for FDTD Solvers and Analysis</a></p>
 
-  <div class="w3-display-right w3-text-black" style="padding:48px">
-      <img src="../../Media_1/portraits/nangels.jpg" width="500" height="500">      
-  </div> 
+      </div>
+    </div>
+  </body>
+
 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>

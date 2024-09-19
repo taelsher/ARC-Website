@@ -156,6 +156,26 @@
       display: table;
       clear: both;
     }
+    .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  .left {
+    width: 500px;
+    padding: 20px;
+
+  }
+
+  .right {
+    width: 500px;
+    padding: 20px;
+
+  }
   </style>
   <body>
     <!-- Navbar (sit on top) -->
@@ -242,38 +262,32 @@
     </nav>
 
     <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-      <div class="w3-display-left w3-text-black" style="padding: 48px">
-        <span class="w3-jumbo w3-hide-small">Meet Rachel</span><br />
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Meet Rachel</span
-        ><br />
-        <span class="w3-large">Rachel is a current undergraduate student.</span>
-        <p class="m4 w3-hide-medium">
-          <b>Rachel Lumnitzer's</b> research interests include <br />dispersive
-          material simulations.
-        </p>
-        <h3>PROJECTS</h3>
-        <p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="../GRADS/Rachel_GRADS_MURF_Presentation_4-7.pdf"
-            class="w3-button w3-black"
-            ><i class="fa fa-th"> </i> One Dimensional FDTD in Dispersive
-            Media<br />
-            for Biomedical Imaging Applications - GRADS 2020</a
-          >
-        </p>
-      </div>
+    <header class="bgimg-1 w3-display-container" id="home">
+      <body style = "padding-top: 150px;">
+        <div class = "row">
+          <div class = "left">
+            <!-- left content -->
+            <span class="w3-jumbo">Meet Rachel</span><br/>
+            <span class="w3-large">Rachel is a current undergraduate student.</span>
+            <p class="m4 w3-hide-medium">
+              <b>Rachel Lumnitzer's research interests include dispersive
+              material simulations.
+            </p>
+            <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rachel-lumnitzer-8570691b/" class="w3-button w3-black"><i class="fa fa-linkedin"> </i></a></p> 
 
-      <div class="w3-display-right w3-text-black" style="padding: 60px">
-        <img
-          src="../../Media_1/portraits/rlumnitzer_updated.jpg"
-          alt="Rachel"
-          width="500"
-          height="500"
-        />
-      </div>
+          </div>
+          <div class = "right">
+            <!-- right content -->
+            <img src="../../Media_1/portraits/rlumnitzer_updated.jpg" alt="Rachel" width="500" height="500">
+            <h3>PROJECTS</h3>
+            <p><a target="_blank" rel="noopener noreferrer" href="../GRADS/Rachel_GRADS_MURF_Presentation_4-7.pdf"
+              class="w3-button w3-black" style="text-wrap: wrap;"><i class="fa fa-th"></i> One Dimensional FDTD in Dispersive Media for Biomedical Imaging Applications - GRADS 2020</a></p>
+          </div>
+        </div>
+      </body>
+
+
+  
 
       <div
         class="w3-display-bottomleft w3-text-grey w3-large"

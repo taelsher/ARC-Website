@@ -220,6 +220,7 @@ body,
 
   .flash-button {
     animation: flash 1s infinite;
+    color: darkblue;
   }
 
   @keyframes flash {
@@ -234,6 +235,7 @@ body,
     100% {
       opacity: 1;
     }
+    
   }
   .row-container{
     display: flex;

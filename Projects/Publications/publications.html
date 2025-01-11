@@ -15,7 +15,21 @@
     height: 100%;
     line-height: 1.8;
     }
-
+    .publication {
+    background-color: #D2492A;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+  }
+  .active,
+  .publication:hover {
+    background-color: #92A2BD;
+  }
     /* Full height image header */
     .bgimg-1 {
     background-position: center;
@@ -168,7 +182,7 @@
       <a href="../../#news" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o" aria-hidden="true"></i> NEWS</a>
       <a href="../../#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle" aria-hidden="true"></i> ABOUT</a>
       <a href="../../#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> GROUP</a>
-      <a href="../../#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="../../#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Gallery</a>
       <a href="../../#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <a href="https://electrical.mines.edu/" target="_blank"><img class="w3-image w3-round-large" src="../../Media_1/ee_logo.png" alt="Electrical Engineering Department" style="width:20%"></a>
@@ -186,17 +200,34 @@
   <a href="../../#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
   <a href="../../#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="../../#team" onclick="w3_close()" class="w3-bar-item w3-button">GROUP</a>
-  <a href="../../#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="../../#work" onclick="w3_close()" class="w3-bar-item w3-button">Gallery</a>
   <a href="../../#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container" id="home">
   <body style = "padding-top: 160px;">
     <h1 class="w3-center"><b>Publications</b></H1>
-        <p style="padding-left: 20%; padding-right: 20%;" align="center">Our group has published numerous papers in top-tier journals and conferences. Below is a list of our publications and abstracts.</p>
+        <p style="padding-left: 20%; padding-right: 20%;" align="center">Our group has published numerous papers in top-tier journals and conferences. Below is a list of our publications.</p>
         <br>
-        <p style="font-size: 50px; text-align: center;">COMING SOON</p>
+        <div style="text-align: center;">
+        <a target="_blank" rel="noopener noreferrer" href="_Journal_Articles_by_ARC_Students_December 2024.pdf">
+          <button class="publication">Journal Articles</button>
+        </a>
+      </div>
+      <br>
+      <div style = "text-align: center;">
+        <a target="_blank" rel="noopener noreferrer" href="_Conference_Abstracts_by_ARC_Students_December_2024.pdf">
+          <button class="publication">Conference Abstracts</button>
+        </a>
+      </div>
+      <br>
+      <div style = "text-align: center;">
+        <a target="_blank" rel="noopener noreferrer" href="_Conference_Proceedings_by_ARC_Students_December_2024.pdf">
+          <button class="publication">Conference Proceedings</button>
+        </a>
+
+
 
   </body>
     

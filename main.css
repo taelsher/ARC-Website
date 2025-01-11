@@ -38,6 +38,7 @@ body,
     outline: none;
     font-size: 15px;
   }
+  
 
   .active,
   .collapsible:hover {
@@ -83,7 +84,23 @@ body,
     width: 30%;
     height: 400px;
   }
+  .publication {
+    background-color: #D2492A;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+  }
+  .active,
+  .publication:hover {
+    background-color: #92A2BD;
+  }
 
+ 
   /* Style the buttons inside the tab */
   .tab button {
     display: block;

@@ -1,0 +1,65 @@
+
+    <div class="row-container">
+      <!-- cards -->
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/jdiener-2.jpg" alt="Joseph Diener" style="width:100%">
+        <div class="w3-container">
+          <h3>Joseph Diener</h3>
+          <!-- <p class="w3-opacity">PhD Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p> Research interests include antenna design, SDR Applications, FDTD, and Channel Sounding.</p>
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/joseph_d_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/mdodd.jpg" alt="Joseph Diener" style="width:100%">
+        <div class="w3-container">
+          <h3>Matthew Dodd</h3>
+          <!-- <p class="w3-opacity">PhD Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p> Research interests include wideband antenna design and antenna array optimization.
+            <p>
+              <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/matt_dod_work.html"
+                class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/rjones1.jpg" alt="Rob" style="width:100%">
+        <div class="w3-container">
+          <h3>Robert Jones</h3>
+          <!-- <p class="w3-opacity">Master's Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p>Research interests include antenna design and metrology and channel sounding.</p>
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/rob_j_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card" style="width: 300px;">
+        <img src="Media_1/portraits/placeholder.jpg" alt="Nolan" style="width:100%">
+        <div class="w3-container">
+          <h3>Nolan Grant</h3>
+          <!-- <p class="w3-opacity">Undergraduate Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p>coming soon</p>
+            <!-- projects redirect -->
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/nolan_g_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- end row-container -->
+    </div> 

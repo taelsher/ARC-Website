@@ -63,3 +63,57 @@
       </div>
       <!-- end row-container -->
     </div> 
+
+
+
+    <div class="row-container">
+      <!-- Cards go here -->
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/cevanovich.jpg" alt="Cameron" style="width:100%">
+        <div class="w3-container">
+          <h3>Cameron Evanovich</h3>
+          <!-- <p class="w3-opacity">Undergraduate Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p>coming soon</p>
+            <!-- projects redirect -->
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/cameron_e_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/lelmiladi.jpg" alt="Lisa" style="width:100%">
+        <div class="w3-container">
+          <h3>Lisa Elmiladi</h3>
+          <!-- <p class="w3-opacity">Undergraduate Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p>Embedded system design, Wireless/RF communications, and non-invasive medical technology</p>
+            <!-- projects redirect -->
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/lisa_E_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/nangels.jpg" alt="Nelson" style="width:100%">
+        <div class="w3-container">
+          <h3>Nelson Angels</h3>
+          <!-- <p class="w3-opacity">Undergraduate Student</p> -->
+          <button type="button" class="collapsible">Research Interests</button>
+          <div class="content">
+            <p>Computational electromagnetics in FDTD relating to biomedical applications and implants, brain-computer
+              interfaces, wireless communications optimization, and antenna design.</p>
+            <a target="_blank" rel="noopener noreferrer" href="Projects/personal-pages/nelson_a_work.html"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-arrow-right"></i> Projects</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- end row-container -->
+    </div> <!--- End of MS Students -->

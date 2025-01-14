@@ -303,6 +303,12 @@ hr {
   margin-bottom: 0px;
 }
 
+.director-tag{
+  color: #2a6ad2;
+  font-size: 1.1em;
+  font-family: Garamond;
+  margin-bottom: 0px;
+}
 .research_interests {
   font-size: 0.9em;
   font-family: Verdana;
@@ -351,7 +357,14 @@ hr {
   border: 1px solid #D2492A;
   /* Change border color to white */
 }
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons as needed */
+}
 
+.button-container p {
+  margin: 0; /* Remove default margins from <p> elements */
+}
 .circular-button {
   background-color: rgb(63, 119, 231);
   /* Set the button's background color to blue */

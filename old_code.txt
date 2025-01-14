@@ -1,3 +1,46 @@
+FACULT SECTION
+    <div class="row-container" style="margin-top:64px">
+
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/aelsherb2.jpg" alt="Dr. Elsherbeni" style="width:100%">
+        <div class="w3-container">
+          <h3>Dr. Atef Elsherbeni</h3>
+          <p class="w3-opacity">Director</p>
+          <button type="button" class="collapsible">Research Area</button>
+          <div class="content">
+            <p>Scattering/diffraction of EM waves, computational EM using FDTD, field visualiz./software devel. for EM
+              education, RFID/sensor integrated FRID systems, and reflector/printed antennas & antenna array.</p>
+            <a href="https://electrical.mines.edu/project/elsherbeni-atef/"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-envelope"></i> Contact</a>
+            <a href="https://atef.elsherbeni.com/" class="w3-button w3-light-grey w3-block w3-black"><i
+                class="fa fa-arrow-right"></i> Website</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w3-card" style="width:300px">
+        <img src="Media_1/portraits/aaen_peter_headshot.jpg" alt="Dr. Aaen" style="width:100%">
+        <div class="w3-container">
+          <h3>Dr. Peter Aaen</h3>
+          <p class="w3-opacity">Co-Director</p>
+          <button type="button" class="collapsible">Research Area</button>
+          <div class="content">
+            <p>Multi-physics based modelling and measurement methodologies for high-power and
+              high-frequency electronic devices, non-linear electrothermal transistor modelling
+              efficient electromagnetic simulations, development of compact models for microwave power transistor and
+              RFICs, calibration techniques for microwave measurements. </p>
+            <a href="https://electrical.mines.edu/project/aaen-peter/"
+              class="w3-button w3-light-grey w3-block w3-black"><i class="fa fa-envelope"></i> Contact</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- end row-container -->
+    </div>
+
+
 
     <div class="row-container">
       <!-- cards -->

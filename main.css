@@ -280,9 +280,25 @@ hr {
   column-gap: 10px;
   row-gap: 10px;
 }
+.row-container3{
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
 
 .pennIM {
   margin-left: 15%;
+  width: 175px;
+  height: 175px;
+}
+.pennIM2{
+  margin-left: 3%;
   width: 175px;
   height: 175px;
 }
@@ -328,6 +344,18 @@ hr {
   color: #D2492A;
 }
 
+.projects2 {
+  display: inline-block;
+  color: #2a6ad2;
+  font-size: 0.9em;
+  font-family: Verdana;
+  cursor: pointer;
+
+}
+
+.projects2:hover {
+  color: #D2492A;
+}
 .project-content {
   display: none;
 
@@ -342,12 +370,27 @@ hr {
 .project-content.visible p {
   margin: .4rem;
 }
+.project-content2 {
+  display: none;
 
+}
+
+.project-content2.visible {
+  max-width: 20rem;
+  margin-left: 3rem;
+  display: block;
+  margin-left: 50%;
+}
+
+.project-content2.visible p {
+  margin: .4rem;
+}
 .project-button {
   display: block;
   padding: 0.5rem;
   color: #2a6ad2;
   border: 1px solid #2a6ad2;
+  text-decoration: none;
 
 }
 

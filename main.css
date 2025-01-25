@@ -353,7 +353,6 @@ hr {
 
 .project-content.visible {
   max-width: 20rem;
-  margin-left: 3rem;
   display: block;
 
 }
@@ -368,9 +367,7 @@ hr {
 
 .project-content2.visible {
   max-width: 20rem;
-  margin-left: 3rem;
   display: block;
-  margin-left: 50%;
 }
 
 .project-content2.visible p {
@@ -455,9 +452,12 @@ hr {
 }
 .project-content.visible,
 .project-content2.visible {
-  margin-left: 0; /* Reset left margin */
+  max-width: 20rem;
+  display: block;
+  margin-left: 2.6rem; /* Reset left margin */
   margin-right: 0;
   text-align: center; /* Center-align content */
+  justify-content: center; /* Center-align buttons */;
 }
 
 .button-container {

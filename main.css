@@ -301,7 +301,12 @@ hr {
 .bio p {
   margin: 0;
 }
-
+.directorbio{
+  max-width: 35em;
+}
+.directorbio p{
+  margin: 0;
+}
 .name {
   color: #D2492A;
   font-size: 1.3em;
@@ -446,6 +451,7 @@ hr {
   margin-right:auto;
 
 }
+.directorbio,
 .bio{
   margin: 0 auto;
   text-align:center;
@@ -484,5 +490,10 @@ hr {
 @media(max-width: 1450px) and (min-width: 1000px){
   .bio{
     margin-right:20%
+  }
+}
+@media(max-width: 1000px) and (min-width:700px){
+  .directorbio{
+    margin-left: 15%;
   }
 }

@@ -20,6 +20,9 @@ html {
   background-size: cover;
   background-image: url("Media_1/pictures/lab4.jpg");
   min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  will-change: transform;
 }
 
 .w3-bar .w3-button {

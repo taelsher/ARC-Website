@@ -299,6 +299,7 @@ hr {
 /* media queary to change position of image and text */
 .bio {
   max-width: 25em;
+  min-width:400px;
 }
 
 .bio p {

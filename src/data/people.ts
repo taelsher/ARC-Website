@@ -146,6 +146,7 @@ export const people: Person[] = [
       { title: "Low Cost Phase Shifting Network Presentation", href: "/Media_1/research/NRSM_PRIOR_Rev3.pdf" },
       { title: "Hardware and Software Development of Antenna Demonstration Module", href: "/Projects/UGRADS/Antenna Demonstration Poster.pdf" },
     ],
+    website: "https://kobeprior99.github.io/",
     sections: ["ms", "past-undergrad"],
   },
   {

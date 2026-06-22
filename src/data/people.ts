@@ -143,7 +143,7 @@ export const people: Person[] = [
       { title: "Target Illumination by Structured Beam for Advanced Radar Scattering Analysis", href: "/Media_1/research/Kobe_MURF_Presentation-V6.pdf" },
       { title: "16-Element Phased Array for Coarse AoA Estimation", href: "/Media_1/research/Prior_16_Port_Phasing Network.pdf" },
       { title: "Low Cost Phase Shifting Network Paper", href: "/Media_1/research/_Kobe_Low-Cost_16-Port_Phasing_V7.pdf" },
-      { title: "Low Cost Phase Shifting Network Presentation", href: "/Media_1/research/NRSM_PRIOR_Rev3.pdf" },
+      { title: "Low Cost Phase Shifting Network Presentation", href: "Media_1/research/NRSM_Prior_Rev3.pdf" },
       { title: "Hardware and Software Development of Antenna Demonstration Module", href: "/Projects/UGRADS/Antenna Demonstration Poster.pdf" },
     ],
     website: "https://kobeprior99.github.io/",

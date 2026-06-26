@@ -1,0 +1,180 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <h1 class="hero__title">Publications</h1>
+      <p class="hero__sub">
+        Our group has published numerous papers in top-tier journals and conferences. 
+        Below is a list of our publications.
+      </p>
+    </div>
+  </header>
+
+  <section class="section section--light">
+    <div class="container">
+      <div class="publications-grid">
+        
+        <a 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="Projects/Publications/_21_Journal_Articles_by_ARC_Students_December 2024.pdf"
+          class="publication-card"
+        >
+          <div class="publication-card__icon">📄</div>
+          <h3>Journal Articles</h3>
+          <p>Read peer-reviewed archival papers tracking our foundational research breakthroughs.</p>
+          <span class="publication-card__link">View Document &rarr;</span>
+        </a>
+
+        <a 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="Projects/Publications/_23_Conference_Abstracts_by_ARC_Students_December_2024.pdf"
+          class="publication-card"
+        >
+          <div class="publication-card__icon">📊</div>
+          <h3>Conference Abstracts</h3>
+          <p>Explore high-level technical outlines and presentation summaries from major events.</p>
+          <span class="publication-card__link">View Document &rarr;</span>
+        </a>
+
+        <a 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          href="Projects/Publications/_22_Conference_Proceedings_by_ARC_Students_December_2024.pdf"
+          class="publication-card"
+        >
+          <div class="publication-card__icon">🌐</div>
+          <h3>Conference Proceedings</h3>
+          <p>Review comprehensive papers published directly within international engineering proceedings.</p>
+          <span class="publication-card__link">View Document &rarr;</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* ── HERO ──────────────────────────────────────────────────────── */
+  .hero {
+    position: relative;
+    min-height: 45svh;
+    background-image: url("/Media_1/pictures/lab4.jpg"); /* Reuses your existing project imagery layout style */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero { background-attachment: scroll; min-height: 35svh; }
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(27, 58, 107, 0.9) 0%, rgba(0,0,0,0.6) 100%);
+  }
+
+  .hero__inner {
+    position: relative;
+    padding-block: 5rem 3rem;
+    margin-inline: auto;
+    max-width: 750px;
+    z-index: 1;
+  }
+
+  .hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero__sub {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-inline: auto;
+    max-width: 55ch;
+  }
+
+  /* ── SECTIONS ──────────────────────────────────────────────────── */
+  .section { padding-block: var(--section-py, 4rem); }
+  .section--light { background: #f0ede7; }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  /* ── PUBLICATIONS CARDS ─────────────────────────────────────────── */
+  .publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-block: 2rem;
+  }
+
+  .publication-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface, #ffffff);
+    border: 1px solid var(--color-border, #e2e8f0);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .publication-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .publication-card__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .publication-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-navy, #1b3a6b);
+  }
+
+  .publication-card p {
+    font-size: 0.925rem;
+    color: var(--color-muted, #64748b);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .publication-card__link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-accent, #d2492a);
+    transition: color 0.15s;
+    margin-top: auto;
+  }
+
+  .publication-card:hover .publication-card__link {
+    color: var(--color-navy, #1b3a6b);
+  }
+</style>

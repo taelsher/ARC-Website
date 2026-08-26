@@ -220,7 +220,8 @@ export const people: Person[] = [
     id: "kidney",
     name: "Lauren Kidney",
     photo: "/Media_1/portraits/Lauren.jpeg",
-    researchInterests: "Circuit design, RFID systems, and antenna design.",
+    researchInterests: "Antenna simulation and design for wireless communication systems.",
+    linkedin: "https://www.linkedin.com/in/lauren-lq-kidney",
     sections: ["undergrad"],
   },
   {
@@ -241,7 +242,14 @@ export const people: Person[] = [
     linkedin: "https://www.linkedin.com/in/charlie-fent-904579309/",
     sections: ["undergrad"],
   },
-
+  {
+    id: "schkade",
+    name: "Daniel Schkade",
+    photo: "/Media_1/portraits/Daniel-Schkade.jpeg",
+    researchInterests: "Metasurface optimization for generating structured waveforms.",
+    linkedin: "https://www.linkedin.com/in/danielschkade/",
+    sections: ["undergrad"],
+  },
   // ── PAST FACULTY ──────────────────────────────────────────────────────────────
   {
     id: "hadi",

@@ -212,7 +212,7 @@ export const people: Person[] = [
     photo: "/Media_1/portraits/Bennet.jpg",
     researchInterests: "RF/microwave circuits and antenna design.",
     projects: [
-      { title: "Design of Circularly Polarized Antenna Element for Phased Array Antenna System", href: "/Media_1/research/Bennett+Symposium-Presentation Poster.pdf" },
+      { title: "Design of Circularly Polarized Antenna Element for Phased Array Antenna System", href: "/Media_1/research/Bennet_Research_Presentation.pdf" },
     ],
     sections: ["undergrad"],
   },

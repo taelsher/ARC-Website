@@ -55,7 +55,19 @@ export const people: Person[] = [
     sections: ["faculty"],
   },
 
-  // ── CURRENT PHD ───────────────────────────────────────────────────────────────
+// ── CURRENT PHD ───────────────────────────────────────────────────────────────
+  {
+    id: "connolly",
+    name: "Cameron Connolly",
+    photo: "/Media_1/portraits/CConnolly.jpg",
+    researchInterests: "Microwave circuit design, advanced electromagnetic analysis software, RFID systems, and space communications.",
+    linkedin: "https://www.linkedin.com/in/cameronrconnolly/",
+    projects: [
+      { title: "Surface Wave Launcher", href: "/Projects/UGRADS/SWLPresentation.pdf" },
+      { title: "Doppler Radar for X Band", href: "/Projects/UGRADS/DopplerRadarXband.pdf" },
+    ],
+    sections: ["phd", "past-undergrad"],
+  },
   {
     id: "diener",
     name: "Joseph Diener",
@@ -99,27 +111,8 @@ export const people: Person[] = [
     ],
     sections: ["phd", "past-ms", "past-undergrad"],
   },
-  {
-    id: "connolly",
-    name: "Cameron Connolly",
-    photo: "/Media_1/portraits/CConnolly.jpg",
-    researchInterests: "Microwave circuit design, advanced electromagnetic analysis software, RFID systems, and space communications.",
-    linkedin: "https://www.linkedin.com/in/cameronrconnolly/",
-    projects: [
-      { title: "Surface Wave Launcher", href: "/Projects/UGRADS/SWLPresentation.pdf" },
-      { title: "Doppler Radar for X Band", href: "/Projects/UGRADS/DopplerRadarXband.pdf" },
-    ],
-    sections: ["phd", "past-undergrad"],
-  },
 
   // ── CURRENT MS ────────────────────────────────────────────────────────────────
-  {
-    id: "evanovich",
-    name: "Cameron Evanovich",
-    photo: "/Media_1/portraits/cevanovich.jpg",
-    linkedin: "https://www.linkedin.com/in/cameron-evanovich-b91a11113/",
-    sections: ["ms"],
-  },
   {
     id: "angels",
     name: "Nelson Angels",
@@ -131,6 +124,25 @@ export const people: Person[] = [
       { title: "Safety of Wireless Brain Implants: A Systematic Review", href: "/Media_1/research/ACES Presentation_Atef_Edit_Complete.pdf" },
     ],
     sections: ["ms"],
+  },
+  {
+    id: "evanovich",
+    name: "Cameron Evanovich",
+    photo: "/Media_1/portraits/cevanovich.jpg",
+    linkedin: "https://www.linkedin.com/in/cameron-evanovich-b91a11113/",
+    sections: ["ms"],
+  },
+  {
+    id: "petersen",
+    name: "Elizabeth Petersen",
+    photo: "/Media_1/portraits/EPetersen.jpg",
+    researchInterests: "Antenna design and optimization for healthcare applications.",
+    linkedin: "https://www.linkedin.com/in/elizabeth-petersen-ab7317269/",
+    projects: [
+      { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
+      { title: "Shielding Material for Reducing EMI", href: "/Media_1/research/Liz_Viceroy.pdf" },
+    ],
+    sections: ["ms", "past-undergrad"],
   },
   {
     id: "prior",
@@ -149,20 +161,72 @@ export const people: Person[] = [
     website: "https://kobeprior99.github.io/",
     sections: ["ms", "past-undergrad"],
   },
-  {
-    id: "petersen",
-    name: "Elizabeth Petersen",
-    photo: "/Media_1/portraits/EPetersen.jpg",
-    researchInterests: "Antenna design and optimization for healthcare applications.",
-    linkedin: "https://www.linkedin.com/in/elizabeth-petersen-ab7317269/",
-    projects: [
-      { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
-      { title: "Shielding Material for Reducing EMI", href: "/Media_1/research/Liz_Viceroy.pdf" },
-    ],
-    sections: ["ms", "past-undergrad"],
-  },
 
   // ── CURRENT UNDERGRAD ─────────────────────────────────────────────────────────
+  {
+    id: "bauer",
+    name: "Mathias Bauer",
+    photo: "/Media_1/portraits/Mathias_Bauer.jpg",
+    researchInterests: "Radio and microwave frequency hardware, and novel antenna design",
+    linkedin: "https://www.linkedin.com/in/mathiasbauer2024/",
+    sections: ["undergrad"],
+  },
+  {
+    id: "fent",
+    name: "Charlie Fent",
+    photo: "/Media_1/portraits/CharlieFent.jpg",
+    researchInterests: "Antenna design and signal processing methods for wireless communications and computational electromagnetics.",
+    linkedin: "https://www.linkedin.com/in/charlie-fent-904579309/",
+    sections: ["undergrad"],
+  },
+  {
+    id: "kidney",
+    name: "Lauren Kidney",
+    photo: "/Media_1/portraits/Lauren.jpeg",
+    researchInterests: "Antenna simulation and design for wireless communication systems.",
+    linkedin: "https://www.linkedin.com/in/lauren-lq-kidney",
+    sections: ["undergrad"],
+  },
+  {
+    id: "lindseth",
+    name: "Bennett Lindseth",
+    photo: "/Media_1/portraits/Bennet.jpg",
+    researchInterests: "RF/microwave circuits and antenna design.",
+    projects: [
+      { title: "Design of Circularly Polarized Antenna Element for Phased Array Antenna System", href: "/Media_1/research/Bennet_Research_Presentation.pdf" },
+    ],
+    sections: ["undergrad"],
+  },
+  {
+    id: "reed",
+    name: "Cypress Reed",
+    photo: "/Media_1/portraits/Cypress.jpeg",
+    researchInterests: "Computational electromagnetics and medical applications for RF.",
+    projects: [
+      { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
+    ],
+    sections: ["undergrad"],
+  },
+  {
+    id: "schkade",
+    name: "Daniel Schkade",
+    photo: "/Media_1/portraits/Daniel-Schkade.jpeg",
+    researchInterests: "Metasurface optimization for generating structured waveforms.",
+    linkedin: "https://www.linkedin.com/in/danielschkade/",
+    sections: ["undergrad"],
+  },
+  {
+    id: "asmith",
+    name: "Andrew Smith",
+    photo: "/Media_1/portraits/ASmith.jpeg",
+    researchInterests: "Computational electromagnetics and antenna design.",
+    linkedin: "https://www.linkedin.com/in/andrew-smith-73a35836b/",
+    projects: [
+      { title: "AR and VR Applications for Electromagnetic Education", href: "/Media_1/research/Andrew_MURF_Poster_2026.pdf" },
+      { title: "Accelerating Computational Electromagnetics Using FDTD Method", href: "/Media_1/research/Andrew_viceroy.pdf" },
+    ],
+    sections: ["undergrad"],
+  },
   {
     id: "nsmith",
     name: "Natalie Smith",
@@ -187,18 +251,6 @@ export const people: Person[] = [
     sections: ["undergrad"],
   },
   {
-    id: "asmith",
-    name: "Andrew Smith",
-    photo: "/Media_1/portraits/ASmith.jpeg",
-    researchInterests: "Computational electromagnetics and antenna design.",
-    linkedin: "https://www.linkedin.com/in/andrew-smith-73a35836b/",
-    projects: [
-      { title: "AR and VR Applications for Electromagnetic Education", href: "/Media_1/research/Andrew_MURF_Poster_2026.pdf" },
-      { title: "Accelerating Computational Electromagnetics Using FDTD Method", href: "/Media_1/research/Andrew_viceroy.pdf" },
-    ],
-    sections: ["undergrad"],
-  },
-  {
     id: "zantua",
     name: "Jann Tyler Zantua",
     photo: "/Media_1/portraits/Isidore.jpg",
@@ -206,50 +258,7 @@ export const people: Person[] = [
     linkedin: "https://www.linkedin.com/in/jann-tyler-zantua-673b3135b/",
     sections: ["undergrad"],
   },
-  {
-    id: "lindseth",
-    name: "Bennett Lindseth",
-    photo: "/Media_1/portraits/Bennet.jpg",
-    researchInterests: "RF/microwave circuits and antenna design.",
-    projects: [
-      { title: "Design of Circularly Polarized Antenna Element for Phased Array Antenna System", href: "/Media_1/research/Bennet_Research_Presentation.pdf" },
-    ],
-    sections: ["undergrad"],
-  },
-  {
-    id: "kidney",
-    name: "Lauren Kidney",
-    photo: "/Media_1/portraits/Lauren.jpeg",
-    researchInterests: "Antenna simulation and design for wireless communication systems.",
-    linkedin: "https://www.linkedin.com/in/lauren-lq-kidney",
-    sections: ["undergrad"],
-  },
-  {
-    id: "reed",
-    name: "Cypress Reed",
-    photo: "/Media_1/portraits/Cypress.jpeg",
-    researchInterests: "Computational electromagnetics and medical applications for RF.",
-    projects: [
-      { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
-    ],
-    sections: ["undergrad"],
-  },
-  {
-    id: "fent",
-    name: "Charlie Fent",
-    photo: "/Media_1/portraits/CharlieFent.jpg",
-    researchInterests: "Antenna design and signal processing methods for wireless communications and computational electromagnetics.",
-    linkedin: "https://www.linkedin.com/in/charlie-fent-904579309/",
-    sections: ["undergrad"],
-  },
-  {
-    id: "schkade",
-    name: "Daniel Schkade",
-    photo: "/Media_1/portraits/Daniel-Schkade.jpeg",
-    researchInterests: "Metasurface optimization for generating structured waveforms.",
-    linkedin: "https://www.linkedin.com/in/danielschkade/",
-    sections: ["undergrad"],
-  },
+
   // ── PAST FACULTY ──────────────────────────────────────────────────────────────
   {
     id: "hadi",
@@ -261,34 +270,6 @@ export const people: Person[] = [
   },
 
   // ── PAST PHD ──────────────────────────────────────────────────────────────────
-  {
-    id: "weiss",
-    name: "Alec Weiss",
-    photo: "/Media_1/portraits/aweiss-2.jpg",
-    researchInterests: "Multi-GPU/CPU FDTD and RFID localization.",
-    linkedin: "https://www.linkedin.com/in/alec-weiss-bbb370113/",
-    projects: [
-      { title: "Comparing Runtimes of Python and MATLAB for Computational EM – GRADS 2020", href: "/Projects/GRADS/Alec_GRADS_Presentation_V2.pdf" },
-      { title: "Wideband Antenna Array for 5G NR mid-band frequencies", href: "/Media_1/research/aweiss_array.pdf" },
-      { title: "Multi-GPU/CPU FDTD with MATLAB", href: "/Media_1/research/aweiss_multicore.pdf" },
-      { title: "RFID Localization", href: "/Media_1/research/jkast_aweiss_rfid.pdf" },
-    ],
-    sections: ["past-phd", "past-ms"],
-  },
-  {
-    id: "kast",
-    name: "Joshua Kast",
-    photo: "/Media_1/portraits/jkast-2.jpg",
-    researchInterests: "Beamforming, RFID localization, and SDR.",
-    linkedin: "https://www.linkedin.com/in/joshua-kast-321124128/",
-    projects: [
-      { title: "Simulation of a Nonlinear Frequency Multiplier using FDTD – GRADS 2020", href: "/Projects/GRADS/JosH_GRADS_Presentation_2020_R2.pdf" },
-      { title: "Beamforming Networks", href: "/Media_1/research/jkast_beamforming.pdf" },
-      { title: "RFID Localization", href: "/Media_1/research/jkast_aweiss_rfid.pdf" },
-      { title: "SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band", href: "/Media_1/research/jdiener_rjones_jkast_sdr.pdf" },
-    ],
-    sections: ["past-phd", "past-ms"],
-  },
   {
     id: "algarni",
     name: "Abdullah Algarni",
@@ -319,34 +300,48 @@ export const people: Person[] = [
     sections: ["past-phd"],
   },
   {
+    id: "kast",
+    name: "Joshua Kast",
+    photo: "/Media_1/portraits/jkast-2.jpg",
+    researchInterests: "Beamforming, RFID localization, and SDR.",
+    linkedin: "https://www.linkedin.com/in/joshua-kast-321124128/",
+    projects: [
+      { title: "Simulation of a Nonlinear Frequency Multiplier using FDTD – GRADS 2020", href: "/Projects/GRADS/JosH_GRADS_Presentation_2020_R2.pdf" },
+      { title: "Beamforming Networks", href: "/Media_1/research/jkast_beamforming.pdf" },
+      { title: "RFID Localization", href: "/Media_1/research/jkast_aweiss_rfid.pdf" },
+      { title: "SDR Based Switched-Array Channel Sounder for 5.8 GHz ISM Band", href: "/Media_1/research/jdiener_rjones_jkast_sdr.pdf" },
+    ],
+    sections: ["past-phd", "past-ms"],
+  },
+  {
     id: "patel",
     name: "Kyle Patel",
     photo: "/Media_1/portraits/kyle_square.jpg",
     sections: ["past-phd", "past-ms", "past-undergrad"],
   },
+  {
+    id: "weiss",
+    name: "Alec Weiss",
+    photo: "/Media_1/portraits/aweiss-2.jpg",
+    researchInterests: "Multi-GPU/CPU FDTD and RFID localization.",
+    linkedin: "https://www.linkedin.com/in/alec-weiss-bbb370113/",
+    projects: [
+      { title: "Comparing Runtimes of Python and MATLAB for Computational EM – GRADS 2020", href: "/Projects/GRADS/Alec_GRADS_Presentation_V2.pdf" },
+      { title: "Wideband Antenna Array for 5G NR mid-band frequencies", href: "/Media_1/research/aweiss_array.pdf" },
+      { title: "Multi-GPU/CPU FDTD with MATLAB", href: "/Media_1/research/aweiss_multicore.pdf" },
+      { title: "RFID Localization", href: "/Media_1/research/jkast_aweiss_rfid.pdf" },
+    ],
+    sections: ["past-phd", "past-ms"],
+  },
 
   // ── PAST MS ───────────────────────────────────────────────────────────────────
   {
-    id: "le",
-    name: "Madison Le",
-    photo: "/Media_1/portraits/mle1.jpg",
-    researchInterests: "Computational electromagnetics in FDTD, antenna design, and numerical method analysis.",
-    linkedin: "https://www.linkedin.com/in/madisonmaile/",
+    id: "desposito",
+    name: "Tony D'Esposito",
+    photo: "/Media_1/portraits/tdesposito1.jpg",
+    researchInterests: "Higher-order FDTD.",
     projects: [
-      { title: "Sub-Gridding Errors in Standard and Hybrid Higher Order FDTD Simulations – GRADS 2020", href: "/Projects/GRADS/Madison_GRADS_Subgridding_V3.pdf" },
-      { title: "FDTD Subgridding", href: "/Media_1/research/mle_subgrid_slides.pdf" },
-      { title: "Vivaldi Array for Wideband Applications", href: "/Media_1/research/mle_vivaldi.pdf" },
-    ],
-    sections: ["past-ms", "past-undergrad"],
-  },
-  {
-    id: "velasco",
-    name: "Andy Velasco",
-    photo: "/Media_1/portraits/avelasco_square.jpg",
-    researchInterests: "Dispersive material simulations.",
-    linkedin: "https://www.linkedin.com/in/andresvelascof/",
-    projects: [
-      { title: "Dispersive Analysis for Wireline Logging", href: "/Media_1/research/avelasco_dispersive.pdf" },
+      { title: "Fourth Order Accurate FDTD Implementation", href: "/Media_1/research/tdesposito_fourthorder.pdf" },
     ],
     sections: ["past-ms"],
   },
@@ -362,14 +357,29 @@ export const people: Person[] = [
     sections: ["past-ms"],
   },
   {
-    id: "desposito",
-    name: "Tony D'Esposito",
-    photo: "/Media_1/portraits/tdesposito1.jpg",
-    researchInterests: "Higher-order FDTD.",
+    id: "kringlen",
+    name: "Collin Kringlen",
+    photo: "/Media_1/portraits/Collin_K.jpg",
+    researchInterests: "Computational electromagnetics and electromagnetic education via field visualizations and software programs.",
+    linkedin: "https://www.linkedin.com/in/collin-kringlen/",
     projects: [
-      { title: "Fourth Order Accurate FDTD Implementation", href: "/Media_1/research/tdesposito_fourthorder.pdf" },
+      { title: "Sensor Data Relay System for Underground Mine Communications", href: "/Media_1/research/Collin_kenny_Sensor Data Relay_AE.pdf" },
+      { title: "Towards the Design of a Non-invasive Glucose Monitoring Sensor", href: "/Media_1/research/Silje_ACES_Presentation_V2.pdf" },
     ],
     sections: ["past-ms"],
+  },
+  {
+    id: "le",
+    name: "Madison Le",
+    photo: "/Media_1/portraits/mle1.jpg",
+    researchInterests: "Computational electromagnetics in FDTD, antenna design, and numerical method analysis.",
+    linkedin: "https://www.linkedin.com/in/madisonmaile/",
+    projects: [
+      { title: "Sub-Gridding Errors in Standard and Hybrid Higher Order FDTD Simulations – GRADS 2020", href: "/Projects/GRADS/Madison_GRADS_Subgridding_V3.pdf" },
+      { title: "FDTD Subgridding", href: "/Media_1/research/mle_subgrid_slides.pdf" },
+      { title: "Vivaldi Array for Wideband Applications", href: "/Media_1/research/mle_vivaldi.pdf" },
+    ],
+    sections: ["past-ms", "past-undergrad"],
   },
   {
     id: "lumnitzer",
@@ -381,18 +391,6 @@ export const people: Person[] = [
       { title: "One Dimensional FDTD in Dispersive Media for Biomedical Imaging – GRADS 2020", href: "/Projects/GRADS/Rachel_GRADS_MURF_Presentation_4-7.pdf" },
     ],
     sections: ["past-ms", "past-undergrad"],
-  },
-  {
-    id: "kringlen",
-    name: "Collin Kringlen",
-    photo: "/Media_1/portraits/Collin_K.jpg",
-    researchInterests: "Computational electromagnetics and electromagnetic education via field visualizations and software programs.",
-    linkedin: "https://www.linkedin.com/in/collin-kringlen/",
-    projects: [
-      { title: "Sensor Data Relay System for Underground Mine Communications", href: "/Media_1/research/Collin_kenny_Sensor Data Relay_AE.pdf" },
-      { title: "Towards the Design of a Non-invasive Glucose Monitoring Sensor", href: "/Media_1/research/Silje_ACES_Presentation_V2.pdf" },
-    ],
-    sections: ["past-ms"],
   },
   {
     id: "ostrem",
@@ -408,31 +406,19 @@ export const people: Person[] = [
     ],
     sections: ["past-ms", "past-undergrad"],
   },
+  {
+    id: "velasco",
+    name: "Andy Velasco",
+    photo: "/Media_1/portraits/avelasco_square.jpg",
+    researchInterests: "Dispersive material simulations.",
+    linkedin: "https://www.linkedin.com/in/andresvelascof/",
+    projects: [
+      { title: "Dispersive Analysis for Wireline Logging", href: "/Media_1/research/avelasco_dispersive.pdf" },
+    ],
+    sections: ["past-ms"],
+  },
 
   // ── PAST UNDERGRAD ────────────────────────────────────────────────────────────
-  {
-    id: "homza",
-    name: "Jonathan Homza",
-    photo: "/Media_1/portraits/Jonathan_Homza.png",
-    researchInterests: "Computational electromagnetics and space communications.",
-    sections: ["past-undergrad"],
-  },
-  {
-    id: "malensek",
-    name: "Aidan Malensek",
-    photo: "/Media_1/portraits/Aiden_G.Portrait.jpg",
-    researchInterests: "Narrowband Electronically Steerable Arrays (ESA), RFID, spacecraft communication systems.",
-    linkedin: "https://www.linkedin.com/in/aidan-malensek/",
-    sections: ["past-undergrad"],
-  },
-  {
-    id: "moore",
-    name: "Thomas Moore",
-    photo: "/Media_1/portraits/TMoore.jpg",
-    researchInterests: "High speed board design, radar applications, and antenna design.",
-    linkedin: "https://www.linkedin.com/in/thomasjamesm/",
-    sections: ["past-undergrad"],
-  },
   {
     id: "elmiladi",
     name: "Lisa Elmiladi",
@@ -445,11 +431,10 @@ export const people: Person[] = [
     sections: ["past-undergrad"],
   },
   {
-    id: "morrison",
-    name: "Aiden Morrison",
-    photo: "/Media_1/portraits/Aiden_M.jpg",
-    researchInterests: "Antennas in aerospace applications.",
-    linkedin: "https://www.linkedin.com/in/aidenmorrison/",
+    id: "homza",
+    name: "Jonathan Homza",
+    photo: "/Media_1/portraits/Jonathan_Homza.png",
+    researchInterests: "Computational electromagnetics and space communications.",
     sections: ["past-undergrad"],
   },
   {
@@ -466,36 +451,6 @@ export const people: Person[] = [
     sections: ["past-ms", "past-undergrad"],
   },
   {
-    id: "vath",
-    name: "Charles Vath",
-    photo: "/Media_1/portraits/cvath.jpg",
-    researchInterests: "Computational electromagnetics and electromagnetic education via field visualizations and software programs.",
-    projects: [
-      { title: "Electromagnetic Visualization and Interaction Tools to Aid EM Education", href: "/Projects/UGRADS/Mines_Undergraduate_Research_Poster_Vath.pdf" },
-      { title: "An Interactive Visualization of Electrostatic Electric Field and Potential Distribution", href: "/Media_1/research/Vath_ACES_Presentation_Atef_Edit.pdf" },
-    ],
-    sections: ["past-undergrad"],
-  },
-  {
-    id: "nightengale",
-    name: "Madeleine Nightengale-Luhan",
-    photo: "/Media_1/portraits/M_Night.jpeg",
-    researchInterests: "Antenna theory and design, SDR applications, microwave devices, and RF systems.",
-    sections: ["past-undergrad"],
-  },
-  {
-    id: "wolf",
-    name: "Trevor Wolf",
-    photo: "/Media_1/portraits/t_wolf.jpg",
-    researchInterests: "SDR, RFID, and satellite communication.",
-    linkedin: "https://www.linkedin.com/in/trevorwolf/",
-    projects: [
-      { title: "Hardware and Software Development of Antenna Demonstration Module", href: "/Projects/UGRADS/Antenna Demonstration Poster.pdf" },
-      { title: "Sensor Data Relay System for Underground Mine Communications", href: "/Media_1/research/Collin_kenny_Sensor Data Relay_AE.pdf" },
-    ],
-    sections: ["past-undergrad"],
-  },
-  {
     id: "hutchinson",
     name: "Spencer Hutchinson",
     photo: "/Media_1/portraits/shutchinson_square-2.jpg",
@@ -503,6 +458,45 @@ export const people: Person[] = [
     projects: [
       { title: "Chipless RFID Tag Design", href: "/Media_1/research/shutchinson_chipless.pdf" },
     ],
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "malensek",
+    name: "Aidan Malensek",
+    photo: "/Media_1/portraits/Aiden_G.Portrait.jpg",
+    researchInterests: "Narrowband Electronically Steerable Arrays (ESA), RFID, spacecraft communication systems.",
+    linkedin: "https://www.linkedin.com/in/aidan-malensek/",
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "martinez",
+    name: "Grace Martinez",
+    photo: "/Media_1/portraits/gmartinez.jpg",
+    researchInterests: "Advancing the efficacy of implantable antennas in medical devices.",
+    linkedin: "https://www.linkedin.com/in/grace-martinez-587952232/",
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "moore",
+    name: "Thomas Moore",
+    photo: "/Media_1/portraits/TMoore.jpg",
+    researchInterests: "High speed board design, radar applications, and antenna design.",
+    linkedin: "https://www.linkedin.com/in/thomasjamesm/",
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "morrison",
+    name: "Aiden Morrison",
+    photo: "/Media_1/portraits/Aiden_M.jpg",
+    researchInterests: "Antennas in aerospace applications.",
+    linkedin: "https://www.linkedin.com/in/aidenmorrison/",
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "nightengale",
+    name: "Madeleine Nightengale-Luhan",
+    photo: "/Media_1/portraits/M_Night.jpeg",
+    researchInterests: "Antenna theory and design, SDR applications, microwave devices, and RF systems.",
     sections: ["past-undergrad"],
   },
   {
@@ -516,11 +510,26 @@ export const people: Person[] = [
     sections: ["past-undergrad"],
   },
   {
-    id: "martinez",
-    name: "Grace Martinez",
-    photo: "/Media_1/portraits/gmartinez.jpg",
-    researchInterests: "Advancing the efficacy of implantable antennas in medical devices.",
-    linkedin: "https://www.linkedin.com/in/grace-martinez-587952232/",
+    id: "vath",
+    name: "Charles Vath",
+    photo: "/Media_1/portraits/cvath.jpg",
+    researchInterests: "Computational electromagnetics and electromagnetic education via field visualizations and software programs.",
+    projects: [
+      { title: "Electromagnetic Visualization and Interaction Tools to Aid EM Education", href: "/Projects/UGRADS/Mines_Undergraduate_Research_Poster_Vath.pdf" },
+      { title: "An Interactive Visualization of Electrostatic Electric Field and Potential Distribution", href: "/Media_1/research/Vath_ACES_Presentation_Atef_Edit.pdf" },
+    ],
+    sections: ["past-undergrad"],
+  },
+  {
+    id: "wolf",
+    name: "Trevor Wolf",
+    photo: "/Media_1/portraits/t_wolf.jpg",
+    researchInterests: "SDR, RFID, and satellite communication.",
+    linkedin: "https://www.linkedin.com/in/trevorwolf/",
+    projects: [
+      { title: "Hardware and Software Development of Antenna Demonstration Module", href: "/Projects/UGRADS/Antenna Demonstration Poster.pdf" },
+      { title: "Sensor Data Relay System for Underground Mine Communications", href: "/Media_1/research/Collin_kenny_Sensor Data Relay_AE.pdf" },
+    ],
     sections: ["past-undergrad"],
   },
 ];

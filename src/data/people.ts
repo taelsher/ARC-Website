@@ -198,6 +198,14 @@ export const people: Person[] = [
     sections: ["undergrad"],
   },
   {
+    id: "hosea",
+    name: "Hosea Masih",
+    photo: "/Media_1/portraits/Hosea_Masih.jpg",
+    researchInterests: "Computational EM and EM Education",
+    linkedin: "https://www.linkedin.com/in/hoseamasih/",
+    sections: ["undergrad"],
+  },
+  {
     id: "reed",
     name: "Cypress Reed",
     photo: "/Media_1/portraits/Cypress.jpeg",

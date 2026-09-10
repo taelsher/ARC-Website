@@ -12,6 +12,7 @@ export type Person = {
   linkedin?: string;
   email?: string;
   website?: string;
+  github?: string;
   projects?: Project[];
   // Which sections this person appears in
   sections: ("faculty" | "phd" | "ms" | "undergrad" | "past-faculty" | "past-phd" | "past-ms" | "past-undergrad")[];
@@ -158,7 +159,8 @@ export const people: Person[] = [
       { title: "Low Cost Phase Shifting Network Presentation", href: "Media_1/research/NRSM_Prior_Rev3.pdf" },
       { title: "Hardware and Software Development of Antenna Demonstration Module", href: "/Projects/UGRADS/Antenna Demonstration Poster.pdf" },
     ],
-    website: "https://kobeprior99.github.io/",
+    website: "https://kobeprior.com",
+    github: "https://github.com/kobeprior99",
     sections: ["ms", "past-undergrad"],
   },
 
@@ -169,6 +171,15 @@ export const people: Person[] = [
     photo: "/Media_1/portraits/Mathias_Bauer.jpg",
     researchInterests: "Radio and microwave frequency hardware, and novel antenna design",
     linkedin: "https://www.linkedin.com/in/mathiasbauer2024/",
+    sections: ["undergrad"],
+  },
+  {
+    id: "dickinson",
+    name: "Raphael Dickinson",
+    photo: "/Media_1/portraits/Raphael_Dickinson.jpg",
+    researchInterests: "RFID Systems and Computational Electromagnetics",
+    linkedin: "linkedin.com/in/raphaeldickinson/",
+    github: "https://github.com/raphaeldickinson",
     sections: ["undergrad"],
   },
   {

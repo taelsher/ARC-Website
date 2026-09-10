@@ -182,12 +182,22 @@ export const people: Person[] = [
     github: "https://github.com/raphaeldickinson",
     sections: ["undergrad"],
   },
+
+  
   {
     id: "fent",
     name: "Charlie Fent",
     photo: "/Media_1/portraits/CharlieFent.jpg",
     researchInterests: "Antenna design and signal processing methods for wireless communications and computational electromagnetics.",
     linkedin: "https://www.linkedin.com/in/charlie-fent-904579309/",
+    sections: ["undergrad"],
+  },
+  {
+    id: "Heng",
+    name: "Shiloh Heng",
+    photo: "/Media_1/portraits/Shiloh_Heng.jpeg",
+    researchInterests: "EM Education",
+    linkedin: "www.linkedin.com/in/shiloh-heng",
     sections: ["undergrad"],
   },
   {

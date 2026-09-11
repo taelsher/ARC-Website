@@ -178,7 +178,7 @@ export const people: Person[] = [
     name: "Raphael Dickinson",
     photo: "/Media_1/portraits/Raphael_Dickinson.jpg",
     researchInterests: "RFID Systems and Computational Electromagnetics",
-    linkedin: "linkedin.com/in/raphaeldickinson/",
+    linkedin: "https://linkedin.com/in/raphaeldickinson/",
     github: "https://github.com/raphaeldickinson",
     sections: ["undergrad"],
   },

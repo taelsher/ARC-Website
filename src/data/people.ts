@@ -173,6 +173,16 @@ export const people: Person[] = [
     linkedin: "https://www.linkedin.com/in/mathiasbauer2024/",
     sections: ["undergrad"],
   },
+
+  {
+    id: "bringewatt",
+    name: "Julia Bringewatt",
+    photo: "/Media_1/portraits/julia_bringewatt.jpg",
+    researchInterests: "RFID Systems and Computational Electromagnetics",
+    linkedin: "https://www.linkedin.com/in/julia-bringewatt-542162391/",
+    sections: ["undergrad"],
+  },
+
   {
     id: "dickinson",
     name: "Raphael Dickinson",

@@ -70,6 +70,28 @@ const archiveYears = newsYears.slice(1);
           <h3>EM Education</h3>
           <p>Interactive visualization tools, guided simulation software, and hands-on measurement demonstrations to make electromagnetic phenomena accessible to students at all levels.</p>
         </div>
+          <div class="research-card">
+            <div class="research-card__icon">🌀</div>
+            <h3>Structured Beam Synthesis</h3>
+            <p>Computationally synthesize structured electromagnetic beams and experimentally investigate their interactions with targets to characterize scattering phenomena.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-card__icon">⛏️</div>
+            <h3>Antennas in Mining Applications</h3>
+            <p>Design and characterize antenna systems for challenging underground mining environments, focusing on reliable wireless communication, propagation analysis, and RFID-based localization.</p>
+          </div>
+
+          <div class="research-card">
+            <div class="research-card__icon">🩺</div>
+            <h3>Biomedical Antenna Systems</h3>
+            <p>Develop and simulate specialized antenna systems for biomedical applications, including electromagnetic imaging, tissue characterization, and wireless sensing for healthcare technologies.</p>
+          </div>
+
+          <div class="research-card">
+            <div class="research-card__icon">🔷</div>
+            <h3>Metasurface Design & Reconfigurable Intelligent Surfaces</h3>
+            <p>Engineer programmable metasurfaces and reconfigurable intelligent surfaces to control electromagnetic wave reflection, redirect wireless signals, and enable adaptive beam steering and interference mitigation.</p>
+          </div>
       </div>
 
       <!-- Lab capabilities strip -->
@@ -343,20 +365,24 @@ const archiveYears = newsYears.slice(1);
   .section--light { background: #f0ede7; }
 
   /* ── RESEARCH GRID ─────────────────────────────────────────────── */
-  .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.25rem;
-    margin-bottom: 3rem;
-  }
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
 
-  .research-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: box-shadow 0.2s;
-  }
+.research-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+  width: 100%;
+  max-width: 380px;
+  justify-self: center;
+}
 
   .research-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.07); }
 

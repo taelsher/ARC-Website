@@ -1,16 +1,42 @@
 export type NewsItem = {
   id: string;
-  date: string;         // e.g. "May 2026"
+  date: string;
   year: number;
   headline: string;
   body: string;
-  images?: { src: string; alt: string }[];
+  images?: {
+    src: string;
+    alt: string;
+    aspectRatio?: string;
+    objectPosition?: string;
+  }[];
   links?: { title: string; href?: string }[];
-  videos?: { src: string; title: string }[];  // YouTube embed URLs
+  videos?: { src: string; title: string }[];
 };
 
 export const newsItems: NewsItem[] = [
   // ── 2026 ──────────────────────────────────────────────────────────
+  {
+    id: "atef-keynote-2026",
+    date: "October 2026",
+    year: 2026,
+    headline:
+      "Dr. Atef Elsherbeni was honored as a keynote speaker at the IEEE IMAS conference",
+    body: `Topic: Structured Electromagnetic Beams for Target Scattering and Characterization
+
+  Abstract:
+
+  Structured electromagnetic beams offer a powerful means of tailoring the spatial amplitude, phase, and polarization of an incident field, extending the possibilities for target interrogation beyond conventional plane-wave or fundamental Gaussian-beam illumination. Prominent examples include Laguerre–Gaussian (LG) and Hermite–Gaussian (HG) beams, whose modal structures are described by solutions of the paraxial wave equation. LG modes are indexed by radial and azimuthal orders and can exhibit helical phase fronts associated with orbital angular momentum (OAM). HG modes, by contrast, are characterized by two transverse indices and display distinctive Cartesian patterns of intensity lobes. These controllable field distributions provide additional degrees of freedom for electromagnetic sensing, imaging, and radar.
+
+  When a structured beam illuminates a target, the spatial variation of the incident field modifies the excitation of surface currents and, consequently, the scattered electromagnetic field. For LG illumination, the phase winding and, for nonzero azimuthal order, the on-axis intensity null can make the response particularly sensitive to target position, geometry, and orientation relative to the beam axis. HG modes distribute incident energy among spatially separated lobes, enabling different regions of a target to be emphasized. In both cases, the observed scattering depends jointly on the target properties and the selected beam mode; these effects must therefore be interpreted in the context of the incident illumination.
+
+  This keynote examines how beam order, waist size, focal position, polarization, and target placement influence induced currents and the angular distribution and modal characteristics of scattered fields. It also discusses how computational electromagnetics, such as the finite-difference time-domain (FDTD) method, can be used to analyze these interactions and compare structured-beam responses with those obtained under more conventional excitation. Particular attention is given to measurable far-field scattering signatures.
+
+  By viewing the illumination pattern itself as a design variable, structured-beam scattering offers a promising route toward richer target signatures and potentially improved detection, discrimination, and classification. Realizing these benefits will require careful selection of beam parameters, rigorous electromagnetic modeling, and assessment against conventional illumination under comparable operating conditions. The talk highlights the physical mechanisms, modeling considerations, and opportunities that make structured electromagnetic beams an emerging tool for advanced radar and remote sensing.`,
+    images: [
+      {src: "/Media_1/portraits/aelsherb2.jpg", aspectRatio:" 3 / 4", alt: "Atef",}
+    ],
+  },
   {
     id: "senior-awards-2026",
     date: "May 2026",
@@ -32,7 +58,7 @@ export const newsItems: NewsItem[] = [
       { src: "/Media_1/pictures/team_photo.png", alt: "ARC Team at Viceroy Symposium" },
       { src: "/Media_1/pictures/liz-nat-viceroy.jpeg", alt: "Elizabeth and Natalie at Viceroy" },
       { src: "/Media_1/pictures/kobe-viceroy.jpeg", alt: "Kobe at Viceroy" },
-      { src: "/Media_1/pictures/andrew-viceroy.jpeg", alt: "Andrew at Viceroy" },
+      { src: "/Media_1/pictures/andrew-viceroy.jpeg", objectPosition: "60% 20%", alt: "Andrew at Viceroy" },
     ],
     links: [
       { title: "16-Element Phased Array for Coarse AoA Estimation", href: "/Media_1/research/Prior_16_Port_Phasing Network.pdf" },

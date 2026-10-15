@@ -29,17 +29,23 @@ const hasVideos = item.videos && item.videos.length > 0;
                     ]}
                 >
                     {item.images!.map((img, i) => (
-                        <button
-                            class="news-item__thumb"
-                            data-lightbox-group={item.id}
-                            data-lightbox-index={i}
-                            data-src={img.src}
-                            data-alt={img.alt}
-                            aria-label={`View ${img.alt}`}
-                        >
-                            <img src={img.src} alt={img.alt} loading="lazy" />
-                            <span class="news-item__zoom">⤢</span>
-                        </button>
+                <button
+                    class="news-item__thumb"
+                    data-lightbox-group={item.id}
+                    data-lightbox-index={i}
+                    data-src={img.src}
+                    data-alt={img.alt}
+                    aria-label={`View ${img.alt}`}
+                    style={`aspect-ratio: ${img.aspectRatio ?? "4 / 3"}`}
+                >
+                    <img
+                        src={img.src}
+                        alt={img.alt}
+                        loading="lazy"
+                        style={`object-position: ${img.objectPosition ?? "50% 50%"}`}
+                    />
+                    <span class="news-item__zoom">⤢</span>
+                </button>
                     ))}
                 </div>
             )

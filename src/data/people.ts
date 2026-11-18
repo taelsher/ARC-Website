@@ -228,24 +228,24 @@ export const people: Person[] = [
     ],
     sections: ["undergrad"],
   },
-  {
-    id: "hosea",
-    name: "Hosea Masih",
-    photo: "/Media_1/portraits/Hosea_Masih.jpg",
-    researchInterests: "Computational EM and EM Education",
-    linkedin: "https://www.linkedin.com/in/hoseamasih/",
-    sections: ["undergrad"],
-  },
-  {
-    id: "reed",
-    name: "Cypress Reed",
-    photo: "/Media_1/portraits/Cypress.jpeg",
-    researchInterests: "Computational electromagnetics and medical applications for RF.",
-    projects: [
-      { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
-    ],
-    sections: ["undergrad"],
-  },
+  // {
+  //   id: "hosea",
+  //   name: "Hosea Masih",
+  //   photo: "/Media_1/portraits/Hosea_Masih.jpg",
+  //   researchInterests: "Computational EM and EM Education",
+  //   linkedin: "https://www.linkedin.com/in/hoseamasih/",
+  //   sections: ["undergrad"],
+  // },
+  // {
+  //   id: "reed",
+  //   name: "Cypress Reed",
+  //   photo: "/Media_1/portraits/Cypress.jpeg",
+  //   researchInterests: "Computational electromagnetics and medical applications for RF.",
+  //   projects: [
+  //     { title: "Review of Non-Invasive Glucose Monitoring Methods", href: "/Media_1/research/Elizabeth_Poster_MURF_2026_V2.pdf" },
+  //   ],
+  //   sections: ["undergrad"],
+  // },
   {
     id: "schkade",
     name: "Daniel Schkade",

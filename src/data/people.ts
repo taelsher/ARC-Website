@@ -211,6 +211,14 @@ export const people: Person[] = [
     sections: ["undergrad"],
   },
   {
+    id: "kennedy",
+    name: "Brandon Kennedy",
+    photo: "/Media_1/portraits/Brandon_K.png",
+    researchInterests: "Antenna Design and Computational Electromagnetics",
+    linkedin: "https://www.linkedin.com/in/brandon-kennedy-65557a385/",
+    sections: ["undergrad"],
+  },
+  {
     id: "kidney",
     name: "Lauren Kidney",
     photo: "/Media_1/portraits/Lauren.jpeg",

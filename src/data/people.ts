@@ -215,7 +215,7 @@ export const people: Person[] = [
     name: "Brandon Kennedy",
     photo: "/Media_1/portraits/Brandon_K.png",
     researchInterests: "Antenna Design and Computational Electromagnetics",
-    linkedin: "https://www.linkedin.com/in/brandon-kennedy-65557a385/",
+    linkedin: "https://www.linkedin.com/in/brandontraviskennedy/",
     sections: ["undergrad"],
   },
   {

@@ -16,6 +16,96 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   // ── 2026 ──────────────────────────────────────────────────────────
+  
+  {
+    id: "matt-defense-2026",
+    date: "November 2026",
+    year: 2026,
+    headline:
+      "Matthew Dodd successfully defended his PhD dissertation on Inverse Design of Resonant Metasurfaces for Dichroic Wavefront Control",
+    body: `
+      Abstract:
+
+      Controlling the macroscopic properties of an electromagnetic wave by superimposed effects of
+      microscopic features that alter its local properties is achieved by an engineered structure
+      known as a metasurface. Metasurface technology has seen growing research efforts across the
+      electromagnetic spectrum, from low-frequency radio range to ultraviolet optical wavelengths, and
+      across a wide range of applications spanning communications, radar and sensing, medical
+      imaging, and quantum computing. These technologies promise to revolutionize the capability to
+      manipulate electromagnetic waves and unlock new degrees of freedom in the design space.
+
+      Recent research on metasurface design for the optical regime lies at the intersection of advanced
+      nanofabrication techniques, computational physics methods, and large-scale nonlinear
+      optimization. In this thesis, contributions are presented towards design methods for dichroic
+      optical metasurfaces, which refer to wavefront effects that are localized to a specific frequency
+      range. Much of the previous work in the field has focused on optimizing design performance for
+      wideband uniform performance or has focused on monochromatic response without consideration
+      for wideband response. Here, spectrally confined resonances are tuned to produce the desired
+      response of a metasurface device at multiple wavelengths. However, these resonances are
+      strongly affected by mutual coupling between closely spaced structures which are difficult to
+      predict analytically. Tools for solving this coupling problem lie in numerical optimizations which
+      incorporate gradient information to evolve the metasurface structures iteratively towards a
+      structure that would be impossible or impractical to find by traditional searching of the parameter
+      space.
+
+      This thesis investigates dichroic metasurfaces and demonstrates the effectiveness of these
+      techniques for two different metasurface applications. The first is polarization control, where the
+      polarization of an electromagnetic wave is transformed at a specific wavelength, but adjacent
+      wavelengths are unaffected by the transformation. The second is spatial wavefront transformation
+      in the form of a dichroic deflecting lens. This design also demonstrates large-scale optimization of
+      a resonant metasurface without invoking structural symmetries to simplify the problem. Together,
+      these contributions aim to address the specific applications they are targeting as well as pave the
+      way for future efforts in dichroic and resonant design.
+    `,
+    images: [
+      {
+        src: "/Media_1/news_awards/Matt_Dissertation_Defense.jpeg",
+        aspectRatio: "4 / 3",
+        alt: "Matt",
+      },
+    ],
+  },
+
+  {
+    id: "rob-defense-2026",
+    date: "October 2026",
+    year: 2026,
+    headline:
+      "Rob Jones successfully defended his PhD dissertation on A Modeling Framework to Combine Manufacturing Variation and Measurement Uncertainty to Enable High-Yield Sub-THz Power Amplifier Design",
+    body: `
+      Abstract:
+
+      To enable emerging applications above 100 GHz, semiconductor foundries are developing advanced
+      fabrication processes to achieve higher integrated circuit performance in the sub-terahertz (THz) bands.
+      Circuit design often occurs concurrently with process development. However, the nascency of these
+      processes prevents designers from leveraging mature statistical transistor models to optimize circuit yield.
+      In addition, severe on-wafer measurement errors at sub-THz frequencies impede accurate device
+      characterization and model validation. Given the high financial cost and lengthy fabrication cycles of
+      emerging foundry runs, there is a critical need for a statistical modeling methodology that can be executed
+      in parallel with process development.
+
+      This thesis introduces a statistical modeling framework for state-of-the-art 130-nm heterojunction bipolar
+      transistors (HBTs) that incorporates both measurement uncertainty and process variation into the Agilent
+      HBT large-signal model. Because early-stage models are typically extracted from small sample sizes or
+      contaminated by measurement error, the observed parameter relationships are often incomplete or
+      distorted. To overcome this limitation, the proposed method applies a statistical shrinkage technique that
+      augments empirical parameter extractions with a prior correlation matrix derived from fabrication
+      knowledge. On-wafer measurement errors were systematically mitigated and quantified to ensure accurate
+      data for use in the framework. As part of this characterization effort, this work establishes a new on-wafer
+      structure placement technique that minimizes parasitic coupling by accounting for both target device
+      impedance and inter-device spacing. The statistical framework was constructed from measurements across
+      two wafers and then validated against direct current (DC), millimeter-wave small-signal, and 220-GHz large-
+      signal measurements. In large-signal validation at 220 GHz, the statistical model simulation distributions
+      successfully cap
+    `,
+    images: [
+      {
+        src: "/Media_1/news_awards/Rob_Dissertation_Defense.jpg",
+        aspectRatio: "4 / 3",
+        alt: "Rob",
+      },
+    ],
+  },
   {
     id: "atef-keynote-2026",
     date: "October 2026",

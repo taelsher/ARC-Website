@@ -1,5 +1,13 @@
 ---
 import "../styles/global.css";
+import * as newsModule from "../data/news";
+
+// Use the default export, or the first exported array
+const newsItems: any[] =
+  (Array.isArray(newsModule.default) ? newsModule.default : undefined) ??
+  (Object.values(newsModule).find((v) => Array.isArray(v)) as any[]) ??
+  [];
+
 interface Props {
   title?: string;
   description?: string;
@@ -8,6 +16,20 @@ const {
   title = "MINES ARC Research Group",
   description = "Antennas, RFID, and Computational Electromagnetics at Colorado School of Mines",
 } = Astro.props;
+
+const newsMonths = [
+  ...new Set(
+    newsItems
+      .map((n) => {
+        const iso = String(n.date).match(/^(\d{4})-(\d{2})/);
+        if (iso) return `${iso[1]}-${iso[2]}`;
+        const d = new Date(n.date);
+        if (isNaN(d.getTime())) return null;
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+      })
+      .filter(Boolean),
+  ),
+];
 ---
 
 <!doctype html>
@@ -52,7 +74,9 @@ const {
             <li><a href="/#research">Research</a></li>
             <li><a href="/#team">Team</a></li>
             <li><a href="/#scholarship">Scholarship</a></li>
-            <li><a href="/#news">News</a></li>
+            <li>
+              <a href="/#news" id="navNews" data-news-months={newsMonths.join(",")}>News</a>
+            </li>
             <!-- <li><a href="/#software">Software</a></li> -->
             <li><a href="/#contact">Contact</a></li>
           </ul>
@@ -92,6 +116,14 @@ const {
           toggle?.classList.remove("nav__toggle--open");
         }),
       );
+      // Blink "News" if there's an item this month
+      const newsLink = document.getElementById("navNews");
+      if (newsLink) {
+        const now = new Date();
+        const key = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+        const months = (newsLink.dataset.newsMonths ?? "").split(",");
+        if (months.includes(key)) newsLink.classList.add("nav__news--blink");
+      }
     </script>
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">

@@ -391,3 +391,18 @@
 .lightbox__nav--prev { left: 1rem; }
 .lightbox__nav--next { right: 1rem; }
 
+.nav__news--blink {
+  animation: news-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes news-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.25; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__news--blink {
+    animation: none;
+    font-weight: 700; /* static fallback so it still stands out */
+  }
+}
